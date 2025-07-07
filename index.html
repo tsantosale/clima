@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima do Meu Dia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Clima do Meu Dia</h1>
+        <div class="descricao">
+          <p>
+            O Ayurveda é uma prática milenar que nos convida a cuidar do corpo e
+            da mente com atenção aos ciclos da natureza e aos nossos estados
+            internos.
+          </p>
+          <p>
+            Este projeto é um espaço para você se reconectar com o momento
+            presente através de dicas simples de bem-estar.
+          </p>
+          <ul>
+            <li>
+              🔸 Informe sua cidade para receber uma sugestão de alimentação
+              alinhada com o clima local, segundo princípios ayurvédicos.
+            </li>
+            <li>
+              🔸 Escolha um emoji que represente como você se sente hoje para
+              receber uma dica de atividade que respeite e acolha seu estado
+              emocional.
+            </li>
+          </ul>
+        </div>
+        <h2>Em qual cidade você está?</h2>
+        <label for="cidade">Digite a sua cidade:</label>
+        <input type="text" id="cidade" />
+        <button id="buscarClima">Clima hoje</button>
+        <div id="resultadoClima" hidden></div>
+        <div id="sugestaoClima" hidden></div>
+      </section>
+
+      <section>
+        <h2>Como você está se sentindo hoje?</h2>
+        <div class="humorSelector">
+          <button class="emojiBtn" data-humor="feliz" aria-label="Feliz">
+            😊
+          </button>
+          <button class="emojiBtn" data-humor="triste" aria-label="Triste">
+            😢
+          </button>
+          <button class="emojiBtn" data-humor="calmo" aria-label="Calmo">
+            😌
+          </button>
+        </div>
+        <div id="resultadoHumor" hidden></div>
+      </section>
+      <section>
+        <p>
+          Importante: Este é um uso livre e inspirado nas práticas da Ayurveda.
+        </p>
+        <p>
+          As informações aqui apresentadas não substituem orientações
+          profissionais e não têm finalidade médica ou terapêutica. Em caso de
+          dúvidas, procure um especialista.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Copyright &lt;ALE TORRES /&gt; 2025. Feito com muito ❤ por Alessandra
+        Torres.
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
